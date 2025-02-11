@@ -63,7 +63,7 @@ python app.py
 ## 🎮 How to Use
 
 ### Register a New User
-1. Open [`http://127.0.0.1:5000/register`](http://127.0.0.1:5000/register).
+1. Go to [`http://127.0.0.1:5000/register`](http://127.0.0.1:5000/register).
 2. Enter a **username**, **email**, and **password**.
 3. Scan the **QR code** for 2FA (Google Authenticator).
 4. Enter the generated **authentication code**.
