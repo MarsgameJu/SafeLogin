@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Setup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>2-Faktor-Authentifizierung</h1>
+            <p>Scanne den QR-Code mit deiner Authenticator-App und gib den Code ein.</p>
+            <div class="qr-code">
+                <img src="{{ totp_uri }}" alt="QR Code">
+            </div>
+            <form method="POST" class="auth-form">
+                <label for="code">Gib den Code ein:</label>
+                <input type="text" name="code" id="code" required maxlength="6" placeholder="6-stelliger Code">
+                <button type="submit">Bestätigen</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

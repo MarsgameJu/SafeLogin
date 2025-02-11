@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registriere dich</h1>
+        
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-message {{ category }}">{{ message }}</div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Registrierung Formular -->
+        <form method="POST" action="{{ url_for('register') }}">
+            <input type="text" name="username" placeholder="Benutzername" required>
+            <input type="email" name="email" placeholder="E-Mail" required>
+            <input type="password" name="password" placeholder="Passwort" required>
+            <input type="submit" value="Registrieren">
+        </form>
+
+        <p>Bereits registriert? <a href="{{ url_for('login') }}">Einloggen</a></p>
+    </div>
+
+</body>
+</html>
