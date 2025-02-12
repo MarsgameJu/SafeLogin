@@ -44,13 +44,7 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Initialize the database  
-
-```sh
-python init_db.py
-```
-
-### 5️⃣ Start the application  
+### 4️⃣ Start the application  
 
 ```sh
 python app.py
