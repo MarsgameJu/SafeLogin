@@ -110,8 +110,6 @@ RATE_LIMIT = "5 per minute"  # Limits to 5 requests per minute
 ## 🏆 To-Do / Future Improvements  
 
 - ✅ Improve **UI/UX** with dark-mode styling.  
-- 🔲 **Email verification** for additional security.  
-- 🔲 **Support PostgreSQL & MySQL** in addition to SQLite.  
-- 🔲 **REST API** for external authentication services.  
+- 🔲 **Email verification** for additional security.    
 
 ---
