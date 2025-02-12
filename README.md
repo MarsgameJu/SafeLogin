@@ -87,7 +87,7 @@ SafeLogin/
 │   ├── security.py      # Password hashing and 2FA functions
 │── app.py               # Main Flask application
 │── config.py            # Configuration settings
-│── init_db.py           # Database initialization script
+ script
 │── requirements.txt     # Dependencies
 │── README.md            # Documentation
 ```
