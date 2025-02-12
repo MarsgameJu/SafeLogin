@@ -19,7 +19,7 @@ limiter = Limiter(get_remote_address, app=app, default_limits=[config.RATE_LIMIT
 
 # Datenbank-Verbindung und Insert-Funktion
 def get_db():
-    conn = sqlite3.connect('your_database.db')
+    conn = sqlite3.connect('user.db')
     conn.execute('PRAGMA journal_mode=WAL;')  # WAL-Modus aktivieren
     conn.row_factory = sqlite3.Row  # Optional, falls du Zugriff auf die Spaltennamen brauchst
     return conn
