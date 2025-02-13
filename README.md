@@ -1,3 +1,8 @@
+Hier ist eine aktualisierte und vollständige Version der `README.md` und `requirements.txt` basierend auf den neuesten Änderungen.
+
+### **README.md**
+
+```markdown
 # SafeLogin - Secure User Authentication with Flask  
 
 SafeLogin is a Flask-based web application that provides **secure user authentication** with modern security features.
@@ -9,6 +14,7 @@ SafeLogin is a Flask-based web application that provides **secure user authentic
 ✅ **Session Management** – Secure and configurable sessions  
 ✅ **Rate Limiting** – Protects against brute-force attacks  
 ✅ **SQLite Database** – Simple and efficient user storage  
+✅ **Static File Security** – QR code is accessible only during registration
 
 ---
 
@@ -18,6 +24,7 @@ SafeLogin is a Flask-based web application that provides **secure user authentic
 - **Two-Factor Authentication (2FA)** provides extra security.  
 - **Rate Limiting** prevents excessive login attempts.  
 - **Sessions are securely stored and managed**.  
+- **Static files (QR codes)** are protected to avoid unauthorized access.
 
 ---
 
@@ -44,7 +51,10 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Start the application  
+### 4️⃣ Set up the database  
+Make sure the SQLite database is set up correctly. You can manually create it, or it will be created automatically when the app runs.
+
+### 5️⃣ Start the application  
 
 ```sh
 python app.py
@@ -107,9 +117,20 @@ RATE_LIMIT = "5 per minute"  # Limits to 5 requests per minute
 
 ---
 
-## 🏆 To-Do / Future Improvements  
+## 👥 Contributors
 
-- ✅ Improve **UI/UX** with dark-mode styling.  
-- 🔲 **Email verification** for additional security.    
+If you have any suggestions, bug reports, or pull requests, feel free to contribute! 🎉
 
----
+```
+
+### **requirements.txt**
+
+```text
+Flask==2.2.3
+Flask-Limiter==2.1.0
+Flask-SQLAlchemy==3.0.3
+pyotp==2.8.0
+bcrypt==4.0.1
+qrcode==7.3.1
+```
+
