@@ -1,5 +1,6 @@
 Flask==2.2.3
-Flask-Limiter==2.8.1
-Flask-Session==0.4.0
+Flask-Limiter==2.1.0
+Flask-SQLAlchemy==3.0.3
 pyotp==2.8.0
 bcrypt==4.0.1
+qrcode==7.3.1
