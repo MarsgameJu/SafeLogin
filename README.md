@@ -80,6 +80,8 @@ python app.py
 
 ```
 SafeLogin/
+│── database/            #folder fpr databases
+│   ├── users.db         # storing user data hashed
 │── static/              # Static files (CSS, JS, images)
 │   ├── style.css        # Dark mode styling
 │── templates/           # HTML templates for Flask
