@@ -2,7 +2,7 @@ Hier ist eine aktualisierte und vollständige Version der `README.md` und `requi
 
 ### **README.md**
 
-```markdown
+
 # SafeLogin - Secure User Authentication with Flask  
 
 SafeLogin is a Flask-based web application that provides **secure user authentication** with modern security features.
