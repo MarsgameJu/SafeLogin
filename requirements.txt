@@ -6,3 +6,4 @@ bcrypt==4.0.1
 qrcode==7.3.1
 werkzeug==2.3.7
 flask_session
+pillow
