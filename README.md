@@ -129,5 +129,8 @@ Flask-SQLAlchemy==3.0.3
 pyotp==2.8.0
 bcrypt==4.0.1
 qrcode==7.3.1
+werkzeug==2.3.7
+flask_session
+pillow
 ```
 
