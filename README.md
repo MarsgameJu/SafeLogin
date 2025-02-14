@@ -118,7 +118,7 @@ RATE_LIMIT = "5 per minute"  # Limits to 5 requests per minute
 
 If you have any suggestions, bug reports, or pull requests, feel free to contribute! 🎉
 
-```
+---
 
 ### **requirements.txt**
 
