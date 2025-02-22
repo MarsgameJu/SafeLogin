@@ -80,22 +80,24 @@ python app.py
 
 ```
 SafeLogin/
-│── database/            #folder fpr databases
-│   ├── users.db         # storing user data hashed
-│── static/              # Static files (CSS, JS, images)
-│   ├── style.css        # Dark mode styling
-│── templates/           # HTML templates for Flask
-│   ├── login.html       # Login page
-│   ├── register.html    # Registration page
-│   ├── 2fa.html         # 2FA verification page
-│   ├── dashboard.html   # Dashboard after login
-│── utils/               # Helper functions for security & database
-│   ├── database.py      # SQLite database connection
-│   ├── security.py      # Password hashing and 2FA functions
-│── app.py               # Main Flask application
-│── config.py            # Configuration settings
-│── requirements.txt     # Dependencies
-│── README.md            # Documentation
+│── database/              #folder fpr databases
+│   ├── users.db           # storing user data hashed
+│── static/                # Static files (CSS, JS, images)
+│   ├── style.css          # Styling
+│   ├── flash-message.js   # Setting Falsh messages
+│   ├── password-check.js  # Checking PW stenght
+│── templates/             # HTML templates for Flask
+│   ├── login.html         # Login page
+│   ├── register.html      # Registration page
+│   ├── 2fa.html           # 2FA verification page
+│   ├── dashboard.html     # Dashboard after login
+│── utils/                 # Helper functions for security & database
+│   ├── database.py        # SQLite database connection
+│   ├── security.py        # Password hashing and 2FA functions
+│── app.py                 # Main Flask application
+│── config.py              # Configuration settings
+│── requirements.txt       # Dependencies
+│── README.md              # Documentation
 ```
 
 ---
