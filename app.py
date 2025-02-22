@@ -72,7 +72,7 @@ def login():
             session["temp_totp_secret"] = user[2]
             return redirect(url_for("verify_2fa"))  # Zu 2FA-Überprüfung weiterleiten
         else:
-            flash("Falsche Anmeldedaten.", "danger")
+            flash("Falsche Anmeldedaten.", "warning") #flash message
 
     return render_template("login.html")
 
@@ -82,6 +82,13 @@ def register():
         username = request.form["username"]
         email = request.form["email"]
         password = request.form["password"]
+        confirm_password = request.form["confirm-password"]  # Bestätigungspasswort
+
+        # Überprüfen, ob die Passwörter übereinstimmen
+        if password != confirm_password:
+            flash("Die Passwörter stimmen nicht überein!", "danger")
+            return redirect(url_for("register"))  # Zurück zur Registrierung, wenn die Passwörter nicht übereinstimmen
+
         hashed_pw = hash_password(password)
         totp_secret = generate_totp_secret()
 
@@ -93,6 +100,7 @@ def register():
             flash("Benutzername oder E-Mail bereits vergeben.", "danger")
     
     return render_template("register.html")
+
 
 
 @app.route("/2fa/<email>", methods=["GET", "POST"])
